@@ -56,9 +56,8 @@ public:
 
 		if (rc == SOCKPERF_ERR_NONE) {
 			doLoop();
+			cleanupAfterLoop();
 		}
-
-		cleanupAfterLoop();
 	}
 
 	int initBeforeLoop();
